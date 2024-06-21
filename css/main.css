@@ -5,6 +5,7 @@
 }
 
 .body {
+  
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -12,6 +13,7 @@
 }
 
 header {
+;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -262,15 +264,15 @@ h2 {
   }
 }
 .grid_sec_2 {
+  padding-left: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 300px;
+  gap: 30px;
 }
 
 .grid_sec {
   margin: 30px;
-  width: 100%;
   font-size: 15px;
   justify-content: center;
   align-items: center;
@@ -321,6 +323,7 @@ h2 {
 }
 
 .cont_b {
+  
   display: flex;
   justify-content: center;
   align-items: center;
