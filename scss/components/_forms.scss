@@ -1,0 +1,36 @@
+.contact-info {
+    text-align: center;
+    border-top: 10px;
+    padding-top: 10px;
+  }
+  
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .contact-form input[type=text],
+  .contact-form input[type=email],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+  }
+  
+  .contact-form input[type=submit],
+  .contact-form input[type=reset] {
+    width: 100%;
+    padding: 10px;
+    background-color: #8f8f91;
+    color: fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact-form input[type=submit] {
+    margin-top: 10px;
+  }
+  

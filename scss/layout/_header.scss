@@ -1,0 +1,139 @@
+@mixin center{
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+.cont_b{
+    display: flex;
+    @include center;
+    padding-top: 25px;
+}
+.logo .logo_1 {
+    width: 200px;
+    height: 100px;
+}
+@media (min-width: 480px){
+    .logo_1 {
+        width: 200px;
+        height: 100px;
+    }
+}
+@media (min-width: 768px){
+    .logo_1 {
+        width: 250px;
+        height: 125px;
+    }
+}
+@media (min-width: 1024px){
+    .logo_1 {
+        width: 300px;
+        height: 150px;
+        }  
+}         
+@media (min-width: 1280px){
+    .logo_1 {
+        width: 400px;
+        height: 200px;
+    }
+}
+nav {
+    width: 100%;
+    background-color: $color-secundario;
+    position: relative;
+}
+.nav_menu {
+    
+    width: 100%;
+    box-shadow: $box-shadow;
+    list-style: none;
+    gap: 80px;
+    margin: 0;
+    display: flex;
+    @include center;
+}
+.nav_menu li {
+    position: relative;
+    &:hover .sub_menu {
+        display: block;
+    }
+}
+.nav_menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+} 
+.sub_menu {
+    text-align: left;
+    box-shadow: $box-shadow;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $color-secundario;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;   
+}
+.sub_menu li {
+    width: 100%;
+}
+.sub_menu a {
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .nav_menu {
+        width: 100%;
+        box-shadow: none;
+        list-style: none;
+        gap: 5px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .sub_menu{
+        box-shadow: none;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $color-secundario;
+        list-style: none;
+        padding-left: 40px;
+        margin: 0;
+        width: 200px;
+}
+}   
+#menu_toggle {
+    display: none;
+}
+.menu_icon {
+    float: right;
+    padding-right: 10px;
+    display: none;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .nav_menu {
+        flex-direction: column;
+        display: none; 
+    }
+    #menu_toggle:checked + .menu_icon + .nav_menu {
+        display: flex;
+    }
+    .menu_icon {
+        display: block;
+    }
+    .nav_menu li {
+        text-align: left;
+    }
+    .nav_menu li a {
+        padding: 14px;
+    }
+    .nav_menu li:hover .sub_menu {
+        position: static;
+    }
+}

@@ -1,0 +1,186 @@
+@mixin center{
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+.grid { 
+    display: grid;
+    @include center;
+    grid-template-areas: 
+    "img1 img1 img1 img1"
+    "section section section section"
+    "prod prod prod prod"
+    "img-2 img-2 img-2 img-2"
+    "prod-1 prod-1 prod-1 prod1 "
+    "prod-2 prod-2 prod-2 prod-2"
+    grid-template-columns repeat (4, auto)
+    grid-template-rows repeat (6, auto)
+}
+.grid_img0 {
+    box-shadow: $box-shadow;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 250px;
+}
+@media (min-width: 768px){
+    .grid_img0 {
+        box-shadow: $box-shadow;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 400px;
+    }
+}
+@media (min-width: 1024px){
+    .grid_img0 {
+        box-shadow: $box-shadow;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 600px;
+    }
+}
+@media (min-width: 1280px){
+    .grid_img0 {
+        box-shadow: $box-shadow;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 900px;
+        }
+}
+
+.grid_img_0{
+    box-shadow: $box-shadow;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+}
+@media (min-width: 768px){
+    .grid_img_0 {
+        box-shadow: $box-shadow;
+        margin: 0;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 300px;
+    }
+}
+@media (min-width: 1024px){
+    .grid_img_0 {
+        box-shadow: $box-shadow;
+        margin: 0;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 400px;
+    }
+}
+    @media (min-width: 1280px){
+    .grid_img_0 {
+        box-shadow: $box-shadow;
+        margin: 0;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 700px;
+    }
+}
+.grid_img1{
+    grid-row: 1/3;
+    margin: 0;
+    padding: 0;
+    border: none;  
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+}
+.grid_item{
+    background-color: $color-primario;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    margin: 30px;
+    transition: all 0.2s ease-out;
+    &:hover {
+        transform: scale(1.2);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+}
+}
+.grid_cont {
+    margin: 30px;
+    @include center;
+}
+.parent .grid_item1 {
+    gird-area: img1;
+}
+.parent section {
+    grid-area: section;
+}
+.paren .grid_item5 .parent .grid_item6 .parent .grid_item7 .parent .grid_item8{
+    grid-area: prod;
+}
+.parent.grid_item9 {
+    grid-area: img-2;
+}
+.parent .grid_item9 .parent .grid_item10 .parent .grid_item11 .parent .grid_item12 .parent .grid_item13 {
+    grid-area: prod-1;
+}
+.parent .grid_item14 .parent .grid_item15 .parent .grid_item16 .parent .grid_item17 {
+    grid-area: prod-2;
+}
+
+.grid_item2 .grid_item3 .grid_item4 { 
+    @include center;
+}
+
+.grid_cont {
+    gap: 100px;
+    font-size: 15px;
+}
+@media (min-width:1024px) {
+    .grid_cont{
+        display: flex;
+        padding: 10px;
+    }
+}
+.grid_sec_2{
+    @include center;
+    gap: 300px; 
+}
+.grid_sec {
+    margin: 30px;
+    width: 100%;
+    font-size: 15px;
+    @include center;
+}
+@media (min-width:1024px) {
+    .grid_sec{
+        @include center;
+        display: flex;
+        padding: 10px;
+    }
+}    
+.grid_img2{
+    width: 200px;
+    height: 200px;
+}
+.grid_img3 {
+    width: 200px;
+    height: 200px;
+}
+.grid_item5 .grid_item6 .grid_item7 .grid_item8 {
+    @include center;
+}
+.grid_item9 {
+    margin: 0;
+    padding: 0;
+    border: none;  
+}
+.grid_item10 .grid_item11 .grid_item12 .grid_item13 {
+    @include center;
+}
+.grid_item14 .grid_item15 .grid_item16 .grid_item17 {
+    @include center;
+}

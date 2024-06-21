@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin center{
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+.body {
+    @include center;
+    background-color: $color-primario;
+}
+header { 
+    @include center;
+    font-size: 15px;
+    box-shadow: $box-shadow;
+    background-color: $color-secundario;
+    align-content: center;
+}
+h1 {
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+h2 {
+    text-align: center;
+    background-color: $color-h2;
+    box-shadow: $box-shadow;
+    
+}
+h3 {
+    text-align: center;
+}
+p {
+    margin-bottom: 10px;
+}
