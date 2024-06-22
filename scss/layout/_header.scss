@@ -3,6 +3,13 @@
     align-items: center; 
     text-align: center;
 }
+header { 
+    @include center;
+    font-size: 15px;
+    box-shadow: $box-shadow;
+    background-color: $color-secundario;
+    align-content: center;
+}
 .cont_b{
     display: flex;
     @include center;
