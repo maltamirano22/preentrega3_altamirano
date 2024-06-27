@@ -1,8 +1,4 @@
-@mixin center{
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
-}
+
 .body {
     @include center;
     background-color: $color-primario;
