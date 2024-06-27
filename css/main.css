@@ -16,7 +16,7 @@
   font-family: roboto-f;
   src: url(../assets/fonts/Roboto-Light.ttf);
 }
-.body {
+body {
   font-family: roboto;
   font-style: normal;
 }
@@ -335,6 +335,7 @@ header {
   }
 }
 nav {
+  font-family: roboto-m;
   width: 100%;
   background-color: #f1f1f1;
   position: relative;
@@ -480,7 +481,7 @@ footer {
     padding: 20px;
   }
 }
-.body {
+body {
   justify-content: center;
   align-items: center;
   text-align: center;
