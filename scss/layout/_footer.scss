@@ -18,12 +18,12 @@ footer{
 @media (min-width: 1024px) {
     .sec-footer{
         @include center;
-        padding: 80px;
+        padding: 15px;
     }
   }
   @media (min-width: 1280px) {
     .sec-footer{
         @include center;
-        padding: 65px;
+        padding: 20px;
     }
 }

@@ -36,10 +36,6 @@ h2 {
   font-style: initial;
 }
 
-h3 {
-  padding-top: 20px;
-}
-
 .contact-info {
   text-align: center;
   border-top: 10px;
@@ -473,7 +469,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px;
+    padding: 15px;
   }
 }
 @media (min-width: 1280px) {
@@ -481,7 +477,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 65px;
+    padding: 20px;
   }
 }
 .body {
