@@ -1,9 +1,11 @@
 header { 
-    @include center;
+    width: 100%;
     font-size: 15px;
-    box-shadow: $box-shadow;
-    background-color: $color-secundario;
+    background-color: $color-primario;
     align-content: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 .cont_b{
     display: flex;
@@ -11,14 +13,15 @@ header {
     padding-top: 25px;
 }
 
-.logo .logo_1 {
-    width: 200px;
-    height: 100px;
+.logo_1 {
+    @include center;
+    width: 350px;
+    height: 175px;
 }
 @media (min-width: 480px){
     .logo_1 {
-        width: 200px;
-        height: 100px;
+        width: 250px;
+        height: 125px;
     }
 }
 @media (min-width: 768px){
@@ -29,8 +32,8 @@ header {
 }
 @media (min-width: 1024px){
     .logo_1 {
-        width: 300px;
-        height: 150px;
+        width: 350px;
+        height: 175px;
         }  
 }         
 @media (min-width: 1280px){
@@ -40,21 +43,36 @@ header {
     }
 }
 nav {
+    padding:0;
+    margin: 0;
     font-family: roboto-m;
     width: 100%;
-    background-color: $color-secundario;
+    height: 43px;
+    background-color: $color-primario;
     position: relative;
 }
 .nav_menu {
-    
+    justify-content: center;
+    border-top: 2.5px solid rgb(205, 193, 193) ;
+    border-bottom: 2.5px solid rgb(205, 193, 193);
     width: 100%;
-    box-shadow: $box-shadow;
     list-style: none;
     gap: 80px;
-    margin: 0;
     display: flex;
-    @include center;
+    background-color: $color-primario;
 }
+@media (max-width: 768px) {
+    .nav_menu {
+        align-items: left;
+        z-index: 1000;
+        width: 100%;
+        box-shadow: none;
+        gap: 5px;
+        margin: 0;
+        background-color: $color-secundario;
+    }
+}
+
 .nav_menu li {
     position: relative;
     &:hover .sub_menu {
@@ -80,35 +98,28 @@ nav {
     margin: 0;
     width: 200px;   
 }
+@media (max-width: 768px) {
+.sub_menu{
+    z-index: 1000;
+    text-align: left;
+    display: none;
+    box-shadow: none;
+    position: absolute;
+    top: 100%;
+    gap: 5px;
+    background-color: $color-secundario;
+    padding-left: 40px;
+    margin: 0;
+    width: 200px;
+}
+}
 .sub_menu li {
     width: 100%;
 }
 .sub_menu a {
     padding: 10px;
 }
-@media (max-width: 768px) {
-    .nav_menu {
-        width: 100%;
-        box-shadow: none;
-        list-style: none;
-        gap: 5px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
-    .sub_menu{
-        box-shadow: none;
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: $color-secundario;
-        list-style: none;
-        padding-left: 40px;
-        margin: 0;
-        width: 200px;
-}
-}   
+ 
 #menu_toggle {
     display: none;
 }
@@ -122,6 +133,7 @@ nav {
 }
 @media (max-width: 768px) {
     .nav_menu {
+        text-align: left;
         flex-direction: column;
         display: none; 
     }

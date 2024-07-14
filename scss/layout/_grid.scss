@@ -8,19 +8,20 @@
     "img-2 img-2 img-2 img-2"
     "prod-1 prod-1 prod-1 prod1 "
     "prod-2 prod-2 prod-2 prod-2"
-    grid-template-columns repeat (4, auto)
-    grid-template-rows repeat (6, auto)
+    grid-template-columns repeat (4, 1fr)
+    grid-template-rows repeat (6, 1fr)
+}
+.grid_item1{
+    padding: 10px;
 }
 .grid_img0 {
-    box-shadow: $box-shadow;
-    margin: 0;
     padding: 0;
+    margin: 0;
     width: 100%;
     height: 250px;
 }
 @media (min-width: 768px){
     .grid_img0 {
-        box-shadow: $box-shadow;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -29,7 +30,6 @@
 }
 @media (min-width: 1024px){
     .grid_img0 {
-        box-shadow: $box-shadow;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -38,46 +38,45 @@
 }
 @media (min-width: 1280px){
     .grid_img0 {
-        box-shadow: $box-shadow;
         margin: 0;
         padding: 0;
         width: 100%;
-        height: 900px;
+        height: 1000px;
         }
 }
 
 .grid_img_0{
     box-shadow: $box-shadow;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 @media (min-width: 768px){
     .grid_img_0 {
         box-shadow: $box-shadow;
-        margin: 0;
-        padding-bottom: 10px;
-        width: 100%;
-        height: 300px;
-    }
-}
-@media (min-width: 1024px){
-    .grid_img_0 {
-        box-shadow: $box-shadow;
-        margin: 0;
+        padding: 10px;
         padding-bottom: 10px;
         width: 100%;
         height: 400px;
     }
 }
+@media (min-width: 1024px){
+    .grid_img_0 {
+        box-shadow: $box-shadow;
+        padding: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 750px;
+    }
+}
     @media (min-width: 1280px){
     .grid_img_0 {
         box-shadow: $box-shadow;
-        margin: 0;
+        padding: 10px;
         padding-bottom: 10px;
         width: 100%;
-        height: 700px;
+        height: 800px;
     }
 }
 .grid_img1{
@@ -87,9 +86,11 @@
     border: none;  
     box-shadow: $box-shadow;
     border-radius: 5px;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
+
 }
+
 .grid_item{
     background-color: $color-primario;
     padding: 20px 0 20px 0;
@@ -102,7 +103,12 @@
         padding: 5px;
 }
 }
+.grid_h2{
+    
+    background-color: #ffff;
+}
 .grid_cont {
+
     margin: 30px;
     @include center;
 }
@@ -130,7 +136,8 @@
 }
 
 .grid_cont {
-    gap: 100px;
+    
+    gap: 150px;
     font-size: 15px;
 }
 @media (min-width:1024px) {
@@ -167,11 +174,7 @@
 .grid_item5 .grid_item6 .grid_item7 .grid_item8 {
     @include center;
 }
-.grid_item9 {
-    margin: 0;
-    padding: 0;
-    border: none;  
-}
+
 .grid_item10 .grid_item11 .grid_item12 .grid_item13 {
     @include center;
 }

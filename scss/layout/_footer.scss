@@ -1,15 +1,39 @@
 footer{
-    align-items: center;
-    text-align: center;
+    font-family: sans-serif;
+    @include center;
     padding-top: 5px;
     box-shadow: $box-shadow;
     background-color: $color-secundario;
-    color: #000000;
+    color: #000000; 
+    font-size:15px ;
+    
+}
+footer .foot-cont{
+    @include center;
+}
+
+.foot_menu {
+    list-style-type: none;
+}
+.foot_menu li a {
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    
 
 }
-.container-fluid {
-    padding: 50px;
+.sec-p{
+    text-align: center;
 }
+.redes {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.sec-en {
+    text-align: center;
+}
+
 .icon:hover {
         transform: scale(1.1);
         border-radius: 5px;
